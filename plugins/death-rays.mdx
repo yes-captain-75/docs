@@ -1,0 +1,78 @@
+---
+title: "Death Rays"
+description: "One-click HDRI lighting for Cinema 4D"
+---
+
+## Getting started
+
+Death Rays gives you one-click HDRI lighting in Cinema 4D.
+
+1. Install the C4D Bridge from **Settings** -> **Install C4D Bridge...**
+2. Restart Cinema 4D.
+3. Add your HDRI libraries with **Add HDRIs**.
+4. Click any HDRI preview to apply it to your scene.
+
+### Bridge install options
+
+- **Update All**: Install or update the bridge for all detected Cinema 4D versions.
+- **Install to Selected**: Install the bridge to one specific Cinema 4D version.
+- **Save to Desktop**: Export the bridge package for manual installation.
+
+Death Rays detects installed Cinema 4D versions automatically and installs the bridge where needed.
+
+### Plugin install paths
+
+```bash
+# macOS
+~/Library/Preferences/Maxon/Maxon Cinema 4D [VERSION]/plugins/death_rays_bridge/
+
+# Windows
+%APPDATA%\Maxon\Maxon Cinema 4D [VERSION]\plugins\death_rays_bridge\
+```
+
+## How Death Rays applies HDRIs
+
+Death Rays uses a clear priority order when you click an HDRI.
+
+1. If you selected a Dome Light in Cinema 4D, Death Rays updates that Dome Light.
+2. If no Dome Light is selected and at least one exists, Death Rays updates the first Dome Light in the scene hierarchy.
+3. If no Dome Light exists, Death Rays creates one and links it to the HDRI.
+
+If a `Lights` group exists, Death Rays places new Dome Lights inside it. Otherwise, it adds them at the scene root.
+
+### Automatic naming
+
+Death Rays renames the Dome Light to match the HDRI filename after each apply.
+
+Examples:
+
+- `Dome - Crossfit Gym`
+- `Dome - Music Hall 01`
+
+It strips common resolution suffixes such as `2k` and `4k`.
+
+## Key features
+
+- Smart search for fast HDRI lookup.
+- Folder-based organization.
+- Live HDRI thumbnails before applying.
+- One-click apply to Cinema 4D without manual tag setup.
+
+## Troubleshooting
+
+### Cinema 4D is not connected
+
+- Fully restart Cinema 4D after bridge install.
+- Reinstall the bridge from **Settings**.
+- Restart Cinema 4D again.
+
+The bridge connects automatically on launch.
+
+### No assets found
+
+- Confirm your source folders contain supported files: `.hdr`, `.exr`, `.hdri`.
+- Refresh the asset list.
+
+### Thumbnails are slow or not visible
+
+Large HDRI files can take longer to process. Check progress in the app status bar.
