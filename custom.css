@@ -1,0 +1,6 @@
+/* Increase brand logo size in top-left header */
+header img,
+nav img {
+  max-height: 40px;
+  width: auto;
+}

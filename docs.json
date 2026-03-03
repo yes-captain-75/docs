@@ -2,12 +2,16 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Keyframe or Die",
+  "logo": {
+    "light": "/images/kod_skull.webp",
+    "dark": "/images/kod_skull.webp"
+  },
   "colors": {
     "primary": "#e1061b",
     "light": "#ff2c3f",
     "dark": "#a80514"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon-64x64.png",
   "navigation": {
     "tabs": [
       {
@@ -16,16 +20,13 @@
           {
             "group": "Start here",
             "pages": [
-              "index",
-              "getting-started"
+              "index"
             ]
           },
           {
             "group": "Plugins",
             "pages": [
-              "plugins/death-rays",
-              "plugins/drop-dead",
-              "plugins/noisy-bastard"
+              "plugins/death-rays"
             ]
           }
         ]
@@ -37,11 +38,6 @@
           "anchor": "Website",
           "href": "https://www.keyframeordie.com/",
           "icon": "globe"
-        },
-        {
-          "anchor": "Death Rays",
-          "href": "https://www.keyframeordie.com/",
-          "icon": "bolt"
         }
       ]
     }
@@ -50,13 +46,14 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hello@keyframeordie.com"
+        "href": "https://www.keyframeordie.com/support"
       }
     ]
   },
   "footer": {
     "socials": {
-      "website": "https://www.keyframeordie.com/"
+      "website": "https://www.keyframeordie.com/",
+      "instagram": "https://www.instagram.com/keyframeordie/"
     }
   }
 }

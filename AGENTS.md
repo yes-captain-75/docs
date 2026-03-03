@@ -1,6 +1,6 @@
 > **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
 > For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+> install the Mintlify skill: `skills add https://mintlify.com/docs`
 
 # Documentation project instructions
 
@@ -9,17 +9,16 @@
 - This is a documentation site built on [Mintlify](https://mintlify.com)
 - Pages are MDX files with YAML frontmatter
 - Configuration lives in `docs.json`
-- Run `npx mint dev` to preview locally
-- Run `npx mint broken-links` to check links
+- Run `mint dev` to preview locally
+- Run `mint broken-links` to check links
 
 ## Terminology
 
-<!-- Add product-specific terms and preferred usage -->
-<!-- Example: Use "workspace" not "project", "member" not "user" -->
+Add product-specific terms and preferred usage here.
 
 ## Style preferences
 
-<!-- Add any project-specific style rules below -->
+Add any project-specific style rules below.
 
 - Use active voice and second person ("you")
 - Keep sentences concise — one idea per sentence
@@ -29,5 +28,4 @@
 
 ## Content boundaries
 
-<!-- Define what should and shouldn't be documented -->
-<!-- Example: Don't document internal admin features -->
+Define what should and should not be documented here.
