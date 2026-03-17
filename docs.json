@@ -26,7 +26,8 @@
           {
             "group": "Plugins",
             "pages": [
-              "plugins/death-rays"
+              "plugins/death-rays",
+              "plugins/drop-dead"
             ]
           }
         ]
